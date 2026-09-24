@@ -7,6 +7,7 @@
 <p align="center">
   <strong>Tuvé un accidente que me dejó en cama varios meses, así que retomé algunos temas, este repo es para estructuras de datos y algoritmos empolvados.</strong><br>
   Crisel Escalante Septiebre 24, 2026
+  hbd Erik
 </p>
 
 <p align="center">
