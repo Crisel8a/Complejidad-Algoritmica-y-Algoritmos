@@ -23,6 +23,8 @@
 
 Repasamos estructuras como:
 
+  - Array
+  - Grid
   - Queues
   - Stacks
   - Linked List
