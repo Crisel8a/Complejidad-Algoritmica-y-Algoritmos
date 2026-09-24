@@ -36,7 +36,7 @@ class Stack:
         else:
             return "The stack is empty"
 
-    def peek(self):
+    def peek(self):  # Returns the element on top without removing it.
         if self.top:
             return self.top.data
         else:
@@ -45,3 +45,37 @@ class Stack:
     def clear(self):
         while self.top:
             self.pop()
+
+    def return_elements(self):
+        """Returns a list of all elements in the stack."""
+        elements = []
+        current = self.top
+
+        while current:
+            elements.append(current.data)
+            current = current.next
+
+        return elements
+
+    def search(self, data):
+        """Searches for an element in the stack."""
+        current = self.top
+
+        while current:
+            if current.data == data:
+                return True
+            current = current.next
+
+        return False
+
+    def read(self):
+        """Returns a list of all elements in the stack without modifying it."""
+        return self.return_elements()
+
+    def empty(self):
+        """Checks if the stack is empty."""
+        return self.size == 0
+
+    def empty_stack(self):
+        """Empties the stack."""
+        self.clear()
