@@ -1,3 +1,4 @@
+# using two pointers to check if a string is a palindrome
 def isPalindrome(s):
     left = 0
     right = len(s) - 1
@@ -5,7 +6,6 @@ def isPalindrome(s):
     # Continue looping while the two pointers
     # have not crossed
     while left < right:
-
         # If the characters at the current positions
         # are not equal
         if s[left] != s[right]:
@@ -18,6 +18,7 @@ def isPalindrome(s):
 
     # If no mismatch is found, return True (palindrome)
     return True
+
 
 s = "abba"
 print(isPalindrome(s))
